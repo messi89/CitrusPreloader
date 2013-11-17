@@ -16,15 +16,21 @@ package overgen.citrus
 			// TODO Auto Generated method stub
 		}
 				
-		/*override this function to setup our _starling and call the starlingState*/
+		/* override this function to setup our starling */
 		override protected function handleAddedToStage(e:Event):void
 		{
 			super.handleAddedToStage(e);
 			
 			setUpStarling(true, 1, null, "baseline");
 			
-			state = new GameState();
+			
 		}	
+		
+		/* when starling is ready we call our starlingState */
+		override public function handleStarlingReady():void
+		{
+			state = new GameState();
+		}
 	}
 	
 }
