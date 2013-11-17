@@ -22,6 +22,7 @@ package overgen.citrus
 		override public function initialize():void {
 			super.initialize();
 			
+			//add embeded assets here
 			var img:Image = new Image(Texture.fromBitmap(new nimro()));
 			addChild(img);
 		}

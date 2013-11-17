@@ -20,13 +20,16 @@ package overgen.citrus
 		
 		public function CitrusPreloader() 
 		{
+			//stop our movieClip at first position to listen to the progress event
 			stop();
 			
+			//textfield to show the loading progress
 			progressTxt.x = stage.stageWidth / 2;
 			progressTxt.y = stage.stageHeight / 2;
 			progressTxt.defaultTextFormat = new TextFormat("Tahoma", "20", 0x000000, true);
 			addChild(progressTxt);
 			
+			//handle progress and complete event
 			loaderInfo.addEventListener(ProgressEvent.PROGRESS, onProgress);
 			loaderInfo.addEventListener(Event.COMPLETE, onComplete);
 		}
@@ -34,6 +37,7 @@ package overgen.citrus
 		private function onProgress(e:ProgressEvent):void 
 		{
 			trace("Loading");
+			//show loading %
 			progressTxt.text = String(Math.floor((e.bytesLoaded/e.bytesTotal)*100));
 		}
 		
@@ -47,6 +51,7 @@ package overgen.citrus
 			
 			gotoAndStop(2);
 			
+			//after stopping our movieclip on position 2 we add the main class by getDefintionByName and Addchild			
 			var mainClass:Class = getDefinitionByName("overgen.citrus.Main") as Class;
 			addChild(new mainClass() as DisplayObject);
 		}		
