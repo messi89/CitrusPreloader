@@ -1,4 +1,4 @@
-package  
+package overgen.citrus  
 {
 	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
@@ -47,8 +47,8 @@ package
 			
 			gotoAndStop(2);
 			
-			var mainClass:Class = getDefinitionByName("Main") as Class;
-			addChild(new mainClass(this.stage) as DisplayObject);
+			var mainClass:Class = getDefinitionByName("overgen.citrus.Main") as Class;
+			addChild(new mainClass() as DisplayObject);
 		}		
 	}
 }

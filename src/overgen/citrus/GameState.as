@@ -1,4 +1,4 @@
-package  
+package overgen.citrus  
 {
 	import citrus.core.starling.StarlingState;
 	import starling.display.Image;
@@ -11,7 +11,7 @@ package
 	
 	public class GameState extends StarlingState 
 	{
-		[Embed(source = "../assets/nimro.png")]
+		[Embed(source = "../../../assets/nimro.png")]
 		public static const nimro:Class;
 		
 		public function GameState() 
