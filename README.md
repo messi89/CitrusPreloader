@@ -1,4 +1,4 @@
-# Preloader for CitrusStarling
+# Preloader for StarlingCitrusEngine 
 
 When your have a big SWF running in web or mobile, it makes a time to be loaded, so you should make a preloader for your SWF. This an example to show you how you can create a preloader for a CitrusEngine with Starling app.
 
