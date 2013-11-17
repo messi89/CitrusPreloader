@@ -13,3 +13,8 @@ When your have a big SWF running in web or mobile, it makes a time to be loaded,
 
 For more detailed explanation see the comments in the example code .
 
+Ressources:
+
+1. https://github.com/alamboley/Citrus-Engine.
+
+2. https://github.com/joshtynjala/starling-preloader.
