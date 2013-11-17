@@ -22,8 +22,10 @@ package
 		
 		public function Main(__stage:Stage):void 
 		{
+			//save the parent.stage
 			myStage = __stage;
 			
+			//setUp our starling and call the GameState class
 			setUpStarling(true,1,null,"baseline");
 			state = new GameState();
 		}
@@ -41,6 +43,7 @@ package
 				
 			var starlingInit:Function = function(profile:String):void
 			{
+				//create a starling with our parent.stage "myStage"
 				_starling = new Starling(RootClass, myStage, null, null, "auto", profile);
 				_starling.antiAliasing = antiAliasing;
 				_starling.showStats = debugMode;

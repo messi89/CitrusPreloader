@@ -47,12 +47,6 @@ package
 			
 			gotoAndStop(2);
 			
-			//getDefinitionByName() will let us access the classes without importing
-			/*StarlingType = getDefinitionByName("starling.core.Starling") as Class;
-			MainType = getDefinitionByName("Main") as Class;
-			_starling = new StarlingType(MainType, this.stage);
-			_starling.start();*/
-			
 			var mainClass:Class = getDefinitionByName("Main") as Class;
 			addChild(new mainClass(this.stage) as DisplayObject);
 		}		
