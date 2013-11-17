@@ -8,7 +8,7 @@ When your have a big SWF running in web or mobile, it makes a time to be loaded,
 
 	-frame two Main
 
-3. Override the setUpStarling function to put the parent.stage on our `starling.stage`.
+3. Override the handleAddedToStage handler to setUpStarling.
 
 
 For more detailed explanation see the comments in the example code .
